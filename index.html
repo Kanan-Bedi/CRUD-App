@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to the external CSS file -->
+  </head>
+  <body>
+    <h2>CRUD Application</h2>
+
+    <form id="recordForm">
+      <input type="hidden" id="recordId" />
+      <input type="text" id="name" placeholder="Enter name" required />
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter password"
+        required
+      />
+      <button type="submit">Save</button>
+    </form>
+
+    <table id="recordTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Password</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="app.js"></script>
+  </body>
+</html>
